@@ -18,11 +18,6 @@ module Sprinkle
         test "-f #{path}"
       end
       
-      # Tests that the directory <tt>dir</tt> exists.
-      def has_directory(dir)
-        test "-d #{dir}"
-      end
-      
       # Checks that <tt>symlink</tt> is a symbolic link. If <tt>file</tt> is 
       # given, it checks that <tt>symlink</tt> points to <tt>file</tt>
       def has_symlink(symlink, file = nil)

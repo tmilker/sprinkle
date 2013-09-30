@@ -18,6 +18,12 @@ describe Sprinkle::Verify do
         # Check a directory exists
         has_directory 'mydir'
         
+        # Check that a directory is empty
+        directory_empty 'mydir'
+
+        # Check that a directory is not empty
+        directory_not_empty 'mydir'
+
         # generic test
         test "`version` == \"one\""
         
